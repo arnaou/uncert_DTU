@@ -3,7 +3,22 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+defaults:
+  numbered: False
+parts:
+  - caption: Introduction
+    chapters:
+      - file: 00_Overview
+      - file: 01_Introduction_Python
+      - file: 02_Introduction_Differential_Equations
+      - file: 03_Introduction_Parameter_Fitting
+  - caption: Case study
+    chapters:
+      - file: 04_Introduction_Case_Study
+  - caption: Uncertainty Analysis
+    chapters:
+      - file: 05_Frequentist_Approaches
+      - file: 06_Bayesian_Approaches
+  - caption: Acknowledgements
+    chapters:
+      - file: Acknowledgements
